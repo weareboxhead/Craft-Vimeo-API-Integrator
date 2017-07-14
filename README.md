@@ -14,6 +14,7 @@ Vimeo API Integrator automatically retrieves and populates data for different qu
 * Install the plugin & fill out the required settings.
 * Create a new entry in the `Vimeo Videos` channel (automatically created on plugin install), add the video's id to the `Vimeo Video Id` field, and click save!
 * Re-open the entry to check the `Vimeo Video Files` table has been correctly populated.
+* (Optional) Create an `entries` field for sections which require a Vimeo video, which will pull through the video(s) from the master `Vimeo Videos` section. `{% cache %}` this relationship of couse :)
 
 ## Template Variables
 
