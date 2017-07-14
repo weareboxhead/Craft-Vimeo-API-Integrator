@@ -1,0 +1,33 @@
+{% import "_includes/forms" as forms %}
+
+<h2>Authentication</h2>
+
+<p>If you're unsure as to what any of these authentication settings should be, please see <a href="https://developer.vimeo.com/" target="_blank">developer.vimeo.com/</a></p>
+
+{{ forms.textField({
+	label: "Client Id"|t,
+	id: 'clientId',
+	name: 'clientId',
+	value: settings.clientId,
+	required: true,
+	errors: settings.getErrors('clientId')
+}) }}
+
+{{ forms.textField({
+	label: "Client Secret"|t,
+	id: 'clientSecret',
+	name: 'clientSecret',
+	value: settings.clientSecret,
+	required: true,
+	errors: settings.getErrors('clientSecret')
+}) }}
+
+{{ forms.textField({
+	label: "Access Token"|t,
+	id: 'accessToken',
+	name: 'accessToken',
+	value: settings.accessToken,
+	required: true,
+	errors: settings.getErrors('accessToken')
+}) }}
+
